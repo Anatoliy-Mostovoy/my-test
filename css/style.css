@@ -37,6 +37,18 @@ h1, h2, h3, h4, ul, li, p{
     padding: 94px 0px;
 }
 
+.section-title{
+    margin-bottom: 50px;
+    color: var(--tc-black);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+img{
+    display: block;
+}
 .container{
     width: 1200px;
     padding: 0px 15px;
@@ -190,7 +202,7 @@ h1, h2, h3, h4, ul, li, p{
 
 /* сильные стороны */
 
-.advantages-title{
+.section-title.hidden{
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -228,4 +240,14 @@ h1, h2, h3, h4, ul, li, p{
     align-items: center;
     justify-content: center;
     background-color: var(--bgc-second);
+}
+
+/* чем занимаемся */
+
+.job-list{
+    display: flex;
+}
+
+.job-item:not(:last-child){
+    margin-right: 30px;
 }
