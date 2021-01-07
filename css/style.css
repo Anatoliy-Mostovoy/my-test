@@ -264,6 +264,7 @@ img{
     text-align: center;
     font-size: 16px;
     line-height: 1.18;
+    background-color: var(--bgc-main);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -312,4 +313,32 @@ img{
 .social-link:focus{
     background-color: var(--acent);
     fill: var(--tc-white);
+}
+
+/* наши клиенты */
+.client-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--tc-main);
+    border-radius: 4px;
+    fill: var(--tc-main);
+}
+
+.client-link:hover,
+.client-link:focus{
+    fill:var(--acent);
+    border: 1px solid var(--acent);
 }
