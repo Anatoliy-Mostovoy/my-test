@@ -431,6 +431,10 @@ address{
 
 /* портфолио */
 
+.header-line{
+    border-bottom: 1px solid #ECECEC;
+}
+
 /* кнопки */
 .buttons.list{
     display: flex;
@@ -450,7 +454,8 @@ address{
     color: var(--tc-black);
     border-radius: 4px;
     border-color: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    
 
     font-family: inherit;
     font-weight: 500;
@@ -464,4 +469,59 @@ address{
 .button:hover{
     color: var(--tc-white);
     background-color: var(--acent);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* перчень работ */
+
+.project{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.project.list{
+    margin: -30px 0 0 -30px;
+}
+
+.project-list{
+    width: 370px;
+    border: 1px solid #eeeeee;
+    margin: 30px 0 0 30px;
+    flex-basis: calc(100%/3-30px);
+}
+
+.project-card{
+    display: block;
+}
+
+.project-card:focus,
+.project-card:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.card-list{
+    display: block;
+    padding: 20px 24px;
+}
+
+.card-list h3{
+    color: var(--tc-black);
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.card-list p{
+    color: var(--tc-main);
+    font-size: 16px;
+    line-height: 1.87;
 }
