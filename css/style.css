@@ -20,6 +20,8 @@ html{
 
     --footer: rgba(255, 255, 255, 0.6);
     --footer-link: rgba(255, 255, 255, 0.1);
+
+    --logo: #afb1b8
 }
 
 body{
@@ -308,7 +310,7 @@ img{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: var(--tc-main);
+    fill: var(--logo);
 }
 
 .social-link:hover,
@@ -334,9 +336,9 @@ img{
     justify-content: center;
     width: 170px;
     height: 90px;
-    border: 1px solid var(--tc-main);
+    border: 1px solid var(--logo);
     border-radius: 4px;
-    fill: var(--tc-main);
+    fill: var(--logo);
 }
 
 .client-link:hover,
