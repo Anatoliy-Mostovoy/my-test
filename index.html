@@ -47,7 +47,7 @@
         <!-- hero -->
         <section class="hero overlay">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
         </section>
         <!-- cильные стороны -->
         <section class="section">
@@ -336,8 +336,8 @@
                 <a class="logo-footer link" href="#"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
                 <address>
                     <span class="footer-adress">г. Киев, пр-т Леси Украинки, 26</span><br>
-                    <a class="footer-contact link" href="tel:+380991111111">+38 099 111 11 11</a><br>
-                    <a class="footer-contact  link" href="mailto:info@example.com">info@example.com</a>
+                    <a class="footer-contact link" href="mailto:info@example.com">info@example.com</a><br>
+                    <a class="footer-contact  link" href="tel:+380991111111">+38 099 111 11 11</a>
                 </address>
             </div>
             <div class="footer-social">
@@ -375,5 +375,16 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+                <svg width="11" height="11">
+                    <use href="./img/sprite.svg#close-logo"></use>
+                </svg>
+            </button>
+        </div>  
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
