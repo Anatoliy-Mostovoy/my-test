@@ -503,7 +503,7 @@ address{
     border-bottom: 1px solid #ECECEC;
 }
 
-/* кнопки */
+/* кнопки портфолио*/
 .buttons.list{
     display: flex;
     align-items: center;
@@ -531,6 +531,11 @@ address{
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    transition-property: background-color, color, filter;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .button:focus,
@@ -560,6 +565,10 @@ address{
 
 .project-card{
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:focus,
