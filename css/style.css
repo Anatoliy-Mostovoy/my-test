@@ -669,3 +669,34 @@ address{
     background-color: var(--bgc-main);
     cursor: pointer;
 }
+
+
+.project-inmg{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.project-action{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color:rgba(33, 150, 243, 0.9);;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-action p{
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--tc-white);
+}
+
+.project-list:hover .project-action{
+    transform: translateY(0)
+}
