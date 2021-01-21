@@ -437,6 +437,7 @@ footer{
 .container.footer{
     display: flex;
     align-items: baseline;
+   justify-content: space-between;
 }
 
 .footer-info{
@@ -484,6 +485,9 @@ address{
     color: var(--acent);
 }
 
+.footer-social{
+    margin-right: 93px;
+}
 .footer-social p{
     margin-bottom: 20px;
     font-weight: 700;
@@ -518,6 +522,62 @@ address{
 .footer-link:hover,
 .footer-link:focus{
     background-color: var(--acent);
+}
+
+
+/* добавление формы в футер */
+
+.footer-form > p{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--tc-white);
+}
+.form-area{
+    display: flex;
+}
+
+.mail-input{
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--bgc-footer); 
+    color: var(--tc-white);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-input:hover,
+.mail-input:focus{
+    border: 1px solid var(--acent);
+}
+
+.footer-button{
+    padding: 10px 28px;
+    background-color: var(--acent);
+    color: var(--tc-white);
+    fill: var(--tc-white);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.footer-button > p{
+    margin-right: 10px;
 }
 
 /* портфолио */
@@ -630,7 +690,7 @@ address{
     position: relative;
     overflow: hidden;
 
-}
+}   
 
 .project-action{
     position: absolute;
@@ -639,7 +699,7 @@ address{
     width: 100%;
     height: 100%;
     padding: 63px 24px;
-    background-color:rgba(33, 150, 243, 0.9);;
+    background-color:rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;
