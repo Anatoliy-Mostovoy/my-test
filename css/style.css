@@ -540,6 +540,8 @@ address{
 }
 
 .mail-input{
+    padding: 0px;
+    margin: 0px;
     padding-left: 16px;
     margin-right: 12px;
     width: 358px;
@@ -554,9 +556,9 @@ address{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-input:hover,
 .mail-input:focus{
     border: 1px solid var(--acent);
+    outline: none;
 }
 
 .footer-button{
@@ -587,12 +589,12 @@ address{
 }
 
 /* кнопки портфолио*/
+
 .buttons.list{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
- 
 }
 
 .buttons>.item:not(:last-child){
@@ -607,7 +609,6 @@ address{
     border-color: transparent;
     cursor: pointer;
     
-
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -618,7 +619,6 @@ address{
     transition-property: background-color, color, filter;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .button:focus,
@@ -740,6 +740,7 @@ address{
 .modal{
     height: 581px;
     width: 528px;
+    padding: 40px 41px;
     background-color: var(--bgc-main);
     position: absolute;
     top: 50%;
@@ -764,6 +765,172 @@ address{
     border-radius: 50%;
     background-color: var(--bgc-main);
     cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
+.modal-button:hover{
+    fill: var(--acent);
+}
 
+.modal > p{
+    margin-bottom: 12px;
+    text-align: center;
+    color: var(--tc-black);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+
+.form-field textarea {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 12px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field textarea:focus{
+    border: 1px solid var(--acent);
+    outline: none;
+}
+
+.form-field textarea::placeholder{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+
+}
+textarea {
+    resize: none;
+}
+
+.policy{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.policy-lable {
+    font-size: 14px;
+    line-height: 1.71;
+    cursor: pointer;
+}
+
+.link-policy{
+    color: var(--acent);
+}
+
+.button-info {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 55px;
+    text-align: center;
+    background-color: var(--acent);
+    color: var(--tc-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.form-block{
+    position: relative;
+}
+
+.input-form{
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-form:focus{
+    border: 1px solid var(--acent);
+    outline: none;
+}
+
+.input-form:focus + .input-icon{
+    fill: var(--acent)
+}
+
+.input-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill:var(--tc-black);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/* делаем кастомный чекбокс */
+.checkbox {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.check-icon{
+    display: inline-block;
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--tc-black);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.checkbox:checked + .check-icon{
+    background-color: var(--acent);
+    background-image: url(../img/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--acent);
+}
