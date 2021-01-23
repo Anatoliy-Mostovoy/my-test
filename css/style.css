@@ -832,6 +832,7 @@ textarea {
 }
 
 .policy{
+    position: relative;
     display: flex;
     align-items: center;
     margin: 0px;
@@ -840,6 +841,7 @@ textarea {
 }
 
 .policy-lable {
+    margin-left: 35px;
     font-size: 14px;
     line-height: 1.71;
     cursor: pointer;
@@ -916,6 +918,10 @@ textarea {
 }
 
 .check-icon{
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
     display: inline-block;
     margin-right: 7px;
     width: 15px;
@@ -923,8 +929,7 @@ textarea {
     border: 2px solid var(--tc-black);
     border-radius: 4px;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .checkbox:checked + .check-icon{
